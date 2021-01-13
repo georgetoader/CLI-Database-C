@@ -745,6 +745,7 @@ void DELETE_DB(t_db *db) {
 		return;
 	}
 	t_table *p;
+	
 	//delete each table
 	while (db->tables) {
 		p = db->tables;
