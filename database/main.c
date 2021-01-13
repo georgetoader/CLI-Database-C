@@ -759,7 +759,7 @@ void DELETE_DB(t_db *db) {
 void free_array(char **array) {
 	int i;
 	for (i = 0; i < MAX_VAL; i++)
-        free(array[i]);
+		free(array[i]);
 	free(array);
 }
 
