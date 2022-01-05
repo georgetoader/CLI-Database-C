@@ -4,11 +4,11 @@ care apoi am despartit-o in cuvinte folosind functia "strtok". Variabilele obtin
 functii implementate.
 * `INIT_DB` -> Initializeaza baza de date si ii atribuie numele dat.
 * `DELETE_DB` -> Elibereaza toate memoria ocupata de baza de date.
-* `insTable` -> Adauga in baza de date un tabel cu numele "name". Intai verific daca tipul de date transmis ca parametru este 
+* `INS_TABLE` -> Adauga in baza de date un tabel cu numele "name". Intai verific daca tipul de date transmis ca parametru este 
 	valid si daca nu afisez un mesaj de eroare si ies. Apoi verific daca tabelul exista deja in baza de date prin parcurgerea
 	tuturor tabelelor deja existente. Daca nu exista atunci il initializez si il adaug la sfarsit listei de tabele. Ii atribui
 	numele, tipul de date si ii adaug coloanele.
-* `searchTable` -> Verifica daca exista in baza de date un tabel cu numele "name" transmis ca parametru. Daca da atunci returneaza
+* `SEARCH_TABLE` -> Verifica daca exista in baza de date un tabel cu numele "name" transmis ca parametru. Daca da atunci returneaza
 	un pointer catre pozitia tabelului respectiv. Functia aceasta este folosita in majoritatea celorlalte functii la inceput. 
 * `DELETE_TABLE` -> Sterge tabelul cu numele "name" transmis ca parametru. Verific daca exista tabelul in baza de date si daca da
 	atunci prima data trebuie sa eliberez liniile. Verific tipul de date al elementelor liniilor. In functie de acesta parcurg 
